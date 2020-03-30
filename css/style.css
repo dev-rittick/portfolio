@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Global css*/
+
+* {
+	border: 0px;
+}
+/*reset*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, ul, li {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	list-style-type: none;
+	font-weight: normal;
+	line-height: normal;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+	outline: none;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	padding-right: 0px !important;
+}
+body, html {
+	overflow-x: hidden;
+}
+textarea {
+	resize: none;
+}
+img {
+	max-width: 100%;
+	transition: all 1s ease 0s;
+}
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+a {
+	text-decoration: none;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-in-out 0.1s;
+	-moz-transition: all 0.3s ease-in-out 0.1s;
+	-ms-transition: all 0.3s ease-in-out 0.1s;
+	-o-transition: all 0.3s ease-in-out 0.1s;
+	transition: all 0.3s ease-in-out 0.1s;
+}
