@@ -65,3 +65,91 @@ a:hover {
 	-o-transition: all 0.3s ease-in-out 0.1s;
 	transition: all 0.3s ease-in-out 0.1s;
 }
+.container-fluid{
+	margin: 0 50px;
+}
+.navbar-light{
+	z-index: 9999;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #1A49EF !important;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+      color: #1A49EF !important;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+	  font-family: 'Poppins', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 33px;
+		letter-spacing: 0.1em;
+		color: #302E2E ;
+}
+.navbar .navbar-nav .nav-item {
+	margin: 0 10px;
+}
+.navbar .navbar-nav .nav-item .btn-primary{
+		padding: 4px 20px !important;
+		margin: 4px 0;
+		color: #fff !important;
+}
+.navbar .navbar-nav .nav-item .btn-primary:hover{
+	color: #302E2E !important;
+}
+.btn{
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	padding: 12px 40px !important;
+	border: 1px solid #1A49EF;
+	border-radius: 25px;
+}
+.btn-primary {
+    background: #1A49EF;
+    color: #fff !important;
+}
+.btn-primary:hover{
+	background: #fff;
+	color: #1A49EF !important;
+}
+.btn-secendary{
+	letter-spacing: 0.05em;
+	color: #302E2E;
+}
+.btn-secendary:hover{
+	color: #fff;
+	background: #1A49EF;
+}
+.jumbotron .btn-secendary{
+	margin-right: 25px;
+}
+.jumbotron .btn {
+	min-width: 200px;
+}
+.jumbotron{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: url(../img/herobg.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 65%;
+	height: 100vh;
+}
+.jumbotron h1{
+	font-size: 44px;
+	padding-bottom: 25px;
+}
+.jumbotron p.lead {
+    padding-bottom: 45px;
+    line-height: 181%;
+    letter-spacing: 0.5px;
+}
+.lead {
+    font-size: 16px !important;
+    font-weight: 300;
+}
+.jumbotron .hero img{
+	max-width: 75%;
+	margin: 10%;
+}
