@@ -37,7 +37,7 @@ body {
 }
 body, html {
 	overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 textarea {
 	resize: none;
@@ -66,32 +66,36 @@ a:hover {
 	transition: all 0.3s ease-in-out 0.1s;
 }
 .container-fluid{
-	margin: 0 50px;
+	padding: 0 50px;
 }
 .navbar-light{
 	z-index: 9999;
 }
+.navbar .navbar-brand img {
+	max-width: 123px;
+	width: 70%;
+}
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-    color: #1A49EF !important;
+	color: #1A49EF !important;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-      color: #1A49EF !important;
+	color: #1A49EF !important;
 }
 .navbar .navbar-nav .nav-item .nav-link{
-	  font-family: 'Poppins', sans-serif;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 33px;
-		letter-spacing: 0.1em;
-		color: #302E2E ;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 33px;
+	letter-spacing: 0.1em;
+	color: #302E2E ;
 }
 .navbar .navbar-nav .nav-item {
 	margin: 0 10px;
 }
 .navbar .navbar-nav .nav-item .btn-primary{
-		padding: 4px 20px !important;
-		margin: 4px 0;
-		color: #fff !important;
+	padding: 4px 20px !important;
+	margin: 4px 0;
+	color: #fff !important;
 }
 .navbar .navbar-nav .nav-item .btn-primary:hover{
 	color: #302E2E !important;
@@ -104,8 +108,8 @@ a:hover {
 	border-radius: 25px;
 }
 .btn-primary {
-    background: #1A49EF;
-    color: #fff !important;
+	background: #1A49EF;
+	color: #fff !important;
 }
 .btn-primary:hover{
 	background: #fff;
@@ -123,7 +127,7 @@ a:hover {
 	margin-right: 25px;
 }
 .jumbotron .btn {
-	min-width: 200px;
+	min-width: 198px;
 }
 .jumbotron{
 	position: absolute;
@@ -132,24 +136,143 @@ a:hover {
 	right: 0;
 	background-image: url(../img/herobg.svg);
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: top right;
 	background-size: 65%;
-	height: 100vh;
 }
 .jumbotron h1{
 	font-size: 44px;
 	padding-bottom: 25px;
 }
 .jumbotron p.lead {
-    padding-bottom: 45px;
-    line-height: 181%;
-    letter-spacing: 0.5px;
-}
-.lead {
-    font-size: 16px !important;
-    font-weight: 300;
+	padding-bottom: 45px;
+	line-height: 181%;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	font-weight: 300;
 }
 .jumbotron .hero img{
-	max-width: 75%;
-	margin: 10%;
+	max-width: 60%;
+	margin-top: 10%;
+}
+
+
+
+
+@media (max-width: 1280px) {
+	.jumbotron h1 {
+		font-size: 36px;
+		padding-bottom: 20px;
+	}
+	.jumbotron p.lead {
+		padding-bottom: 35px;
+		line-height: 170%;
+		letter-spacing: 0.5px;
+		font-size: 14px;
+	}
+	.btn {
+		font-size: 12px;
+		padding: 10px 25px !important;
+	}
+	.jumbotron .btn {
+		min-width: 138px;
+	}
+}
+
+@media (max-width: 1040px) {
+	.navbar .navbar-nav .nav-item .nav-link{
+		letter-spacing: 0;
+		font-size: 14px;
+	}
+	.navbar .navbar-nav .nav-item .btn-primary {
+		font-size: 14px;
+		padding: 0px 20px !important;
+		margin: 6px 0;
+	}
+	.jumbotron .hero img{
+		margin-top: 15%;
+	}
+}
+
+@media (max-width: 981px) {
+	.container-fluid {
+		padding: 0 25px;
+}
+	.jumbotron h1 {
+		font-size: 28px;
+		padding-bottom: 15px;
+	}
+	.jumbotron p.lead {
+		padding-bottom: 30px;
+		line-height: 160%;
+		font-size: 12px;
+	}
+	.btn {
+		font-size: 11px;
+		padding: 9px 15px !important;
+	}
+	.jumbotron .btn {
+		min-width: 115px;
+	}
+}
+
+@media (max-width: 800px) {
+	.navbar .navbar-nav .nav-item {
+		margin: 0 4px;
+	}
+	.jumbotron .btn {
+		min-width: 100px;
+	}
+	.jumbotron .btn-secendary {
+		margin-right: 20px;
+	}
+	.btn {
+		font-size: 10.5px;
+		padding: 7px 15px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.container-fluid {
+    padding: 0 15px;
+}
+	.navbar .navbar-brand img {
+		width: 70px;
+	}
+	.navbar .navbar-nav .nav-item .btn-primary {
+		font-size: 12px;
+		padding: 0px 13px !important;
+		margin: 6px 0;
+	}
+	.navbar .navbar-nav .nav-item .nav-link{
+		font-size: 12px;
+		line-height: 26px;
+	}
+	.navbar .navbar-nav .nav-item {
+		margin: 0 2px;
+	}
+	.jumbotron {
+		display: flex;
+	}
+	.jumbotron .row{
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	.jumbotron .hero img {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-width: 40%;
+}
+}
+
+@media (max-width: 648px) {
+	.navbar .navbar-brand img {
+		width: 70px;
+	}
+}
+
+@media (max-width: 480px) {
+	.jumbotron h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
 }
