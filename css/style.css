@@ -23,6 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
   outline: none;
+  box-shadow: none;
 }
 
 body {
@@ -132,8 +133,8 @@ a:hover {
     padding: 0;
     font-size: 1.25rem;
     line-height: 1;
-    border:none;
-    outline: none;
+    border:none !important;
+    outline: none !important;
 }
 .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: #1A49EF !important;
@@ -284,16 +285,7 @@ a:hover {
   .jumbotron p.lead {
     padding-bottom: 30px;
     line-height: 160%;
-    font-size: 12px;
-  }
-
-  .btn {
-    font-size: 11px;
-    padding: 9px 15px !important;
-  }
-
-  .jumbotron .btn {
-    min-width: 115px;
+    font-size: 13px;
   }
 }
 
@@ -302,17 +294,8 @@ a:hover {
     margin: 0 4px;
   }
 
-  .jumbotron .btn {
-    min-width: 100px;
-  }
-
   .jumbotron .btn-secendary {
     margin-right: 20px;
-  }
-
-  .btn {
-    font-size: 10.5px;
-    padding: 7px 15px !important;
   }
 }
 
@@ -322,7 +305,7 @@ a:hover {
   }
 
   .navbar .navbar-brand img {
-    width: 70px;
+    width: 75px;
   }
 
   .navbar .navbar-nav .nav-item .btn-primary {
@@ -366,6 +349,10 @@ a:hover {
   }
 }
 @media (max-width: 575px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    padding: 3px;
+}
   .SmNavBg{
     background-color: #fff;
     padding: 25px;
@@ -399,5 +386,8 @@ a:hover {
   .jumbotron p.lead{
     max-width: 100%;
     margin: 0 auto;
+  }
+  .jumbotron .btn-secendary {
+      margin-right: 5px;
   }
 }
